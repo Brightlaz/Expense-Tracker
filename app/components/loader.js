@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 
-const loader = () => {
+const Loader = () => {
   return (
     <div>
       <h1>The first page of our website</h1>
@@ -9,4 +10,4 @@ const loader = () => {
   );
 };
 
-export default loader;
+export default Loader;

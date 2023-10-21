@@ -1,12 +1,12 @@
+"use client";
+
 import React from "react";
 
-const fillProfile = () => {
+export default function FillProfile() {
   return (
-    <section>
+    <section className="text-black">
       <h1>Fill Profile</h1>
       <p>FillProfile</p>
     </section>
   );
-};
-
-export default fillProfile;
+}

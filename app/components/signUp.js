@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 
-const signIn = () => {
+const SignUp = () => {
   return (
     <div>
       <h1>Sign In</h1>
@@ -9,4 +10,4 @@ const signIn = () => {
   );
 };
 
-export default signIn;
+export default SignUp;

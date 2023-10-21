@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 
-const onboard = () => {
+const Onboard = () => {
   return (
     <div>
       <h1>Onboard page</h1>
@@ -9,4 +10,4 @@ const onboard = () => {
   );
 };
 
-export default onboard;
+export default Onboard;
