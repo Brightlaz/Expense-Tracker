@@ -14,6 +14,9 @@ const swaggerDef = {
   },
   servers: [
     {
+      url: `https://expentra.onrender.com`,
+    },
+    {
       url: `http://localhost:${PORT}`,
     },
   ],
