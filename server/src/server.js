@@ -1,6 +1,6 @@
 const http = require('http');
 const app = require('./app');
-const connectToDatabase = require('../src/config/database')
+const { initDB } = require('./config/ottoman');
 
 const PORT = process.env.PORT || 3000;
 
@@ -24,7 +24,7 @@ const exitHandler = () => {
 
 const startServer = async () => {
     try {
-        await connectToDatabase();
+        await initDB();
 
         server.listen(PORT, () => {
             console.log(`API started at http://localhost:${PORT}`)
