@@ -2,7 +2,7 @@ import { isAuthenticated } from "@/Utils/Auth";
 import { NextResponse } from "next/server";
 
 
-const protectedRoutes = ["/dashboard",];
+const protectedRoutes = ["/dashboard","/budget","/profile"];
 
 
 export default function middleware(req) {
