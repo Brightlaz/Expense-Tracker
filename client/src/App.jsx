@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast'
 // import PersistLogin from './auth/PersistLogin'
 // import RequireAuth from './auth/RequireAuth'
 // import { ROLES } from './config/roles'
+import Loader from './components/loader'
 import useTitle from './hooks/useTitle';
 import SignUp from './pages/SignUp'
 
