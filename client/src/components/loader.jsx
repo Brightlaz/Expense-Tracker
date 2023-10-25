@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../assets/ui/logo.svg'
+
 import 'animate.css';
 
 const Loader = () => {

@@ -4,6 +4,7 @@ import PrimaryLayout from "./layouts/PrimaryLayout";
 import Missing from "./pages/Missing";
 import Budget from "./pages/Budget";
 import Profile from "./pages/Profile";
+import Card from "./pages/Card";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 import Loader from './components/loader';
@@ -16,6 +17,7 @@ import Statistics from './pages/Statistics'
 const Landing = lazy(() => import('./pages/Landing'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const DashLayout = lazy(() => import('./layouts/DashLayout'));
+
 
 function App() {
   useTitle("Expense Tracker");
@@ -35,6 +37,7 @@ function App() {
             <Route path="statistics" element={<Suspense fallback={<Loader />}><Statistics /></Suspense>} />
             <Route path="budget" element={<Suspense fallback={<Loader />}><Budget /></Suspense>} />
             <Route path="profile" element={<Suspense fallback={<Loader />}><Profile /></Suspense>} />
+            <Route path="card" element={<Suspense fallback={<Loader />}><Card /></Suspense>} />
           </Route>
           {/* </Route>
           </Route> */}

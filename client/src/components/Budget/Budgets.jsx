@@ -1,5 +1,7 @@
 import React from "react";
 import { BudgetData } from "../../data/budgetItems";
+import open from "../../assets/Frame 33.png";
+import state from "../../store";
 
 const Budgets = () => {
   return (
@@ -40,6 +42,18 @@ const Budgets = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        className="absolute right-8 bottom-28 cursor pointer"
+        onClick={() => (state.isNewBudget = true)}
+      >
+        <img
+          src={open}
+          alt="Budget Image"
+          className="w-[73px] h-auto"
+          width={500}
+          height={300}
+        />
       </div>
     </div>
   );
