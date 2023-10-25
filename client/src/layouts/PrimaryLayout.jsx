@@ -1,14 +1,14 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const PrimaryLayout = () => {
   return (
-    <div className='min-h-screen w-screen flex flex-col justify-center bg-black/10'>
+    <div className="flex flex-col justify-center w-screen min-h-screen ">
       <Navbar />
       <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default PrimaryLayout
+export default PrimaryLayout;
