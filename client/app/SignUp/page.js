@@ -4,9 +4,9 @@ import Piggy from '../assets/ui/piggy.svg';
 
 const SignUp = () => {
 
-  const handleSignInWithGoogle = () => {
-    console.log("Signing in with Google");
-  };
+  // const handleSignInWithGoogle = () => {
+  //   console.log("Signing in with Google");
+  // };
 
   return (
     <div className="flex justify-center items-center flex-col h-screen">
@@ -26,8 +26,8 @@ const SignUp = () => {
       </section>
       <div className="mt-8">
         <button
-          className="hover:bg-primary transition duration-300 font-bold py-2 px-4 rounded"
-          onClick={handleSignInWithGoogle}
+          className="hover:bg-primary hover:text-white transition duration-300 font-bold py-2 px-4 rounded"
+          // onClick={handleSignInWithGoogle}
         >
           <b className="mr-1">G</b>Sign in with Google
         </button>
