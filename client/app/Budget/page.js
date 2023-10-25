@@ -1,10 +1,12 @@
 import React from "react";
-import Budget from "../components/budget/budget";
+import Budget from "../components/Budget/Budget";
+import NewBudget from "../components/Budget/NewBudget";
 
 const page = () => {
   return (
-    <main>
+    <main className="relative h-screen">
       <Budget />
+      <NewBudget />
     </main>
   );
 };
