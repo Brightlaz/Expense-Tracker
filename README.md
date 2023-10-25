@@ -1,6 +1,6 @@
-# Expense Tracker
+# Expentra
 
-Welcome to the Expense Tracker app, a sleek and intuitive financial management tool built with the powerful MERN stack (MongoDB, Express.js, React, and Node.js). Take control of your finances, track your expenses, and gain insights into your spending habits with ease.
+Welcome to the Expentra app, a sleek and intuitive financial management tool built with the powerful MERN stack (MongoDB, Express.js, React, and Node.js). Take control of your finances, track your expenses, and gain insights into your spending habits with ease.
 
 ## Features
 
@@ -64,7 +64,7 @@ Welcome to the Expense Tracker app, a sleek and intuitive financial management t
       npm run dev
       ```
 
-    Your Expense Tracker app is now up and running!
+    Your Expentra app is now up and running!
 
 ## Contributors:
 
