@@ -8,13 +8,9 @@ const isAuthenticated = require('../../middlewares/auth.middleware');
 
 const router = express.Router();
 
-router
-    .route('/')
-    .post(isAuthenticated, multerUpload.single('file'), uploadFileController);
+router.post('/', isAuthenticated, multerUpload.single('file'), uploadFileController);
 
-router
-    .route('/delete/:publicId')
-    .delete(isAuthenticated, deleteFileController);
+router.delete('/delete/:publicId', isAuthenticated, deleteFileController);
 
 module.exports = router;
 

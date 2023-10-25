@@ -5,7 +5,6 @@ const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
 const fileRoute = require('./file.route');
 const budgetRoute = require('./budget.route');
-const cardRoute = require('./card.route');
 
 const router = express.Router();
 
@@ -41,10 +40,6 @@ const devRoutes = [
     {
         path: '/budgets',
         route: budgetRoute,
-    },
-    {
-        path: '/cards',
-        route: cardRoute,
     },
 ]
 

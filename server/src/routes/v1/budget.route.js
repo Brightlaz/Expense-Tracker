@@ -8,6 +8,8 @@ const {
 } = require('../../controllers/budget.controller');
 const isAuthenticated = require('../../middlewares/auth.middleware');
 
+const router = express.Router();
+
 router.post('/', isAuthenticated, createBudget);
 router.get('/', isAuthenticated, getAllBudgets);
 router.get('/:id', isAuthenticated, getBudget);

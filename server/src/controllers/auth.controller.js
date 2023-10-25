@@ -1,6 +1,6 @@
 const httpStatus = require('http-status');
 const ErrorResponse = require('../utils/errorResponse');
-const ProfileModel = require('../models/profiles.model');
+const { ProfileModel }  = require('../models/profiles.model');
 
 async function googleCallback(req, res, next) {
     try {

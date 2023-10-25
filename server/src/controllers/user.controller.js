@@ -1,7 +1,7 @@
 const httpStatus = require('http-status');
 const z = require('zod');
 const ErrorResponse = require('../utils/errorResponse');
-const ProfileModel = require('../models/profiles.model');
+const { ProfileModel } = require('../models/profiles.model');
 
 const userUpdateSchema = z.object({
     fullName: z.string().optional(),

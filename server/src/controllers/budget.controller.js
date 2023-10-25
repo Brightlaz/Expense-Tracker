@@ -5,14 +5,12 @@ const BudgetModel = require('../models/budget.model');
 
 const budgetCreateSchema = z.object({
     Amount: z.string().min(1),
-    category: z.string(),
     user: z.string(),
     Date: z.date(),
 });
 
 const budgetUpdateSchema = z.object({
     Amount: z.string().min(1).max(255).optional(),
-    category: z.string().optional(),
     Date: z.date().optional(),
 });
 
@@ -95,9 +93,6 @@ async function updateBudget(req, res, next) {
         // Update the budget document only with the specified fields (Amount, category, Date).
         if (updateData.Amount !== undefined) {
             budgetDoc.Amount = updateData.Amount;
-        }
-        if (updateData.category !== undefined) {
-            budgetDoc.category = updateData.category;
         }
         if (updateData.Date !== undefined) {
             budgetDoc.Date = updateData.Date;

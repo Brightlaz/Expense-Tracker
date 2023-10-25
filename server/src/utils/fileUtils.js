@@ -1,4 +1,4 @@
-const cloudinary = require('cloudinary').V2;
+const cloudinary = require('cloudinary');
 const streamifier = require('streamifier');
 const multer = require('multer');
 require('dotenv').config();
