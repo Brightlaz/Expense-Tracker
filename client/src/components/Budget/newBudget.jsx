@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import check from "../../assets/check.svg";
 import close from "../../assets/close.svg";
 
@@ -27,7 +26,7 @@ const NewBudget = () => {
       <div className="absolute top-0 w-full h-full bg-black bg-opacity-40" />
       <div className="absolute left-0 right-0 bottom-0 bg-[#F6F3F3] rounded-tl-[30px] rounded-tr-[30px] pt-[39px] px-[22px] pb-10">
         <div className="absolute top-2 right-4">
-          <Image
+          <img
             src={close}
             alt="Budget Image"
             className="w-[35px] h-auto"
@@ -93,7 +92,7 @@ const NewBudget = () => {
               />
             </div>
             <div className="flex justify-center cursor pointer">
-              <Image
+              <img
                 src={check}
                 alt="Budget Image"
                 className="w-[73px] h-auto"

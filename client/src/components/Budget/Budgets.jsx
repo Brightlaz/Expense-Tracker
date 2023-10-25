@@ -1,10 +1,7 @@
- 
-
 import React from "react";
-import { BudgetData } from "@/app/data/budgetItems";
-import Image from "next/image";
+import { BudgetData } from "../../data/budgetItems";
 
-const Budget = () => {
+const Budgets = () => {
   return (
     <div className="px-[22px] w-full space-y-[19px] mt-[40px]">
       <h1 className="text-center text-2xl font-semibold leading-[41.17px] flex justify-center w-full">
@@ -16,15 +13,15 @@ const Budget = () => {
             key={index}
             className="flex justify-start align-top space-x-4 w-full h-[97px] bg-white rounded-[10px] py-3 px-4 pr-2"
           >
-            <Image
+            <img
               src={item.icon}
               width={500}
               height={500}
               className="w-[72px] h-auto"
               alt="Picture of the author"
             />
-            <div className="w-full relative">
-              <div className="flex w-full align-top justify-between text-left">
+            <div className="relative w-full">
+              <div className="flex justify-between w-full text-left align-top">
                 <h2 className="text-black text-xl font-semibold leading-[34.30px]">
                   {item.title}
                 </h2>
@@ -48,4 +45,4 @@ const Budget = () => {
   );
 };
 
-export default Budget;
+export default Budgets;

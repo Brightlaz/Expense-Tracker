@@ -1,14 +1,14 @@
 import React from "react";
-import Budget from "../components/Budget/Budget";
+import Budgets from "../components/Budget/Budgets";
 import NewBudget from "../components/Budget/newBudget";
 
-const page = () => {
+const Budget = () => {
   return (
     <main className="relative h-screen">
-      <Budget />
+      <Budgets />
       <NewBudget />
     </main>
   );
 };
 
-export default page;
+export default Budget;
