@@ -1,6 +1,6 @@
 const httpStatus = require('http-status');
 const ErrorResponse = require('../utils/errorResponse');
-const ProfileModel = require('../models/profiles.model');
+const ProfileModel  = require('../models/profiles.model');
 
 async function googleCallback(req, res, next) {
     try {
@@ -18,9 +18,9 @@ async function googleCallback(req, res, next) {
 
             await user.save()
 
-            res.status(httpStatus.MOVED_PERMANENTLY).redirect('/v1/docs');
+            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/');
         } else {
-            res.status(httpStatus.MOVED_PERMANENTLY).redirect('/v1/docs');
+            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/');
         }
     } catch (error) {
         next(new ErrorResponse(error.message, httpStatus.INTERNAL_SERVER_ERROR));

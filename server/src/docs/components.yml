@@ -1,5 +1,98 @@
 components:
   schemas:
+    UserData:
+      type: object
+      properties:
+        avatar:
+          type: string
+        fullName:
+          type: string
+        googleId:
+          type: string
+        Id:
+          type: string
+      example:
+        avatar: "https://lh3.googleusercontent.com/a/AAcHTtecH_6ZOOWXTALQXiC"
+        fullName: "fake name"
+        googleId: "5ebac534954b54139806c112"
+        Id: "0a582-ec41-46b0-9884-cbf49f8cb7a"
+
+    UserFullData:
+      type: object
+      properties:
+        googleId:
+          type: string
+        fullName:
+          type: string
+        email:
+          type: string
+          format: email
+        avatar:
+          type: string
+        phoneNumber:
+          type: integer
+        occupation:
+          type: string
+        salary:
+          type: integer
+        saving:
+          type: integer
+        goal:
+          type: integer
+        id:
+          type: string
+        _type:
+          type: string
+      example:
+        googleId: "1168593408059940726345"
+        fullName: "Obinna Franklin Duru"
+        email: "duruobinnafranklin@gmail.com"
+        avatar: "https://lh3.googleusercontent.com/a/ACg8ocLp-GGTIRtfF8d6I8XrNpBmcZBMsRSEOcUPWQ9HZuqi4Q=s96-c"
+        phoneNumber: 0
+        occupation: "null"
+        salary: 0
+        saving: 0
+        goal: 0
+        id: "3680a582-ec41-46b0-9884-cbf49f8cb7aa"
+        _type: "profile"
+
+    BudgetData:
+      type: object
+      properties:
+        amount:
+          type: string
+        category:
+          type: string
+        date:
+          type: string
+      example:
+        amount: "200000"
+        category: "school budget"
+        date: "2023-10-25"
+
+    BudgetFullData:
+      type: object
+      properties:
+        Amount:
+          type: string
+        user:
+          type: string
+        category:
+          type: string
+        Date:
+          type: string
+        id:
+          type: string
+        _type:
+          type: string
+      example:
+        Amount: "100000"
+        user: "3680a582-ec41-46b0-9884-cbf49f8cb7aa"
+        category: "school budget"
+        Date: "2023-10-25"
+        id: "93360839-9484-4e42-8761-04854b5266b2"
+        _type: "budget"
+
     Error:
       type: object
       properties:
