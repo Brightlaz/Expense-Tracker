@@ -6,7 +6,9 @@ const PrimaryLayout = () => {
   return (
     <div className="relative flex flex-col justify-center w-screen min-h-screen ">
       <Navbar />
-      <Outlet />
+      <div className="pb-10">
+        <Outlet />
+      </div>
     </div>
   );
 };
