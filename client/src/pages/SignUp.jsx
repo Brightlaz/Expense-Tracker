@@ -3,7 +3,7 @@ import Piggy from '../assets/ui/piggy.svg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import useTitle from "../hooks/useTitle";
-import { useSignInQuery } from "../auth/authApiSlice";
+// import { useSignInQuery } from "../auth/authApiSlice";
 import { toast } from "react-hot-toast";
 import PulseLoader from 'react-spinners/PulseLoader'
 
