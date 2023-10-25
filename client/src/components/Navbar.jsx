@@ -15,7 +15,7 @@ const Navbar = () => {
           key={index}
           className={`${
             location.pathname === item.path &&
-            "pr-[19.16px] pl-[19px] py-[13px] bg-[#233DFF]"
+            "pr-[19.16px] pl-[19px] py-[13px] bg-primary hover:bg-orange-500  transition duration-300"
           } bg-opacity-20 rounded-[20px] justify-center cursor-pointer items-center gap-2.5 inline-flex`}
         >
           <img
@@ -24,7 +24,7 @@ const Navbar = () => {
             className="w-[22px] h-auto"
           />
           {location.pathname === item.path && (
-            <div className="text-sm font-semibold text-[#233DFF]">
+            <div className="text-sm font-semibold text-primary ">
               {item.title}
             </div>
           )}

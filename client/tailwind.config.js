@@ -8,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary:'#233DFF',
-        piggycolor: '#2F2E41'
+        primary: "#233DFF",
+        primarypurple: "#6C63FF",
+        piggycolor: '#2F2E41',
+      },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

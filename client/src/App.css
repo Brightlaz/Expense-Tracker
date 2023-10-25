@@ -5,3 +5,23 @@
 body {
   @apply font-Montserrat;
 }
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 4px;
+  /* Set the width of the scrollbar */
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#233DFF;
+  /* Set the color of the scrollbar thumb */
+  border-radius: 4px;
+  /* Optional: Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 166, 0, 0.365);
+  /* Set the color of the scrollbar track */
+  border-radius: 4px;
+}

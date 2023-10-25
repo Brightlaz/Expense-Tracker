@@ -1,15 +1,14 @@
- 
 import React from "react";
 import Logo from '../assets/ui/logo.svg'
 
+import 'animate.css';
+
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center flex-col h-screen">
-      <Image
+    <div className="flex-grow flex w-full h-full items-cener justify-center">
+      <img
         src={Logo}
-        alt="Logo Image"
-        width={200}
-        height={200}
+        className="animate__animated animate__bounce animate__infinite"
       />
     </div>
   );
