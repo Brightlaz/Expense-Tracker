@@ -4,21 +4,27 @@ const ErrorResponse = require('../utils/errorResponse');
 const BudgetModel = require('../models/budget.model');
 
 const budgetCreateSchema = z.object({
-    Amount: z.string().min(1),
-    user: z.string(),
-    Date: z.date(),
+    amount: z.string().min(1),
+    category: z.string(),
+    date: z.string(),
 });
 
 const budgetUpdateSchema = z.object({
-    Amount: z.string().min(1).max(255).optional(),
-    Date: z.date().optional(),
+    amount: z.string().min(1).max(255).optional(),
+    date: z.string().optional(),
 });
 
 async function createBudget(req, res, next) {
     try {
+        const userId = req.user.id
         const budgetData = budgetCreateSchema.parse(req.body);
 
-        const newBudget = new BudgetModel(budgetData);
+        const newBudget = new BudgetModel({
+            Amount: budgetData.Amount,
+            user: userId,
+            category: budgetData.category,
+            Date: budgetData.Date
+        });
 
         // Save the budget to the database.
         await newBudget.save();

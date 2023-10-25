@@ -30,15 +30,15 @@ components:
         avatar:
           type: string
         phoneNumber:
-          type: number
+          type: integer
         occupation:
           type: string
         salary:
-          type: number
+          type: integer
         saving:
-          type: number
+          type: integer
         goal:
-          type: number
+          type: integer
         id:
           type: string
         _type:
@@ -55,6 +55,43 @@ components:
         goal: 0
         id: "3680a582-ec41-46b0-9884-cbf49f8cb7aa"
         _type: "profile"
+
+    BudgetData:
+      type: object
+      properties:
+        amount:
+          type: string
+        category:
+          type: string
+        date:
+          type: string
+      example:
+        amount: "200000"
+        category: "school budget"
+        date: "2023-10-25"
+
+    BudgetFullData:
+      type: object
+      properties:
+        Amount:
+          type: string
+        user:
+          type: string
+        category:
+          type: string
+        Date:
+          type: string
+        id:
+          type: string
+        _type:
+          type: string
+      example:
+        Amount: "100000"
+        user: "3680a582-ec41-46b0-9884-cbf49f8cb7aa"
+        category: "school budget"
+        Date: "2023-10-25"
+        id: "93360839-9484-4e42-8761-04854b5266b2"
+        _type: "budget"
 
     Error:
       type: object

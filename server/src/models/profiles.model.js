@@ -15,4 +15,4 @@ const ProfileSchema = new Schema({
 
 const ProfileModel = ottoman.model('profile', ProfileSchema);
 
-module.exports = { ProfileModel, ProfileSchema };
+module.exports = ProfileModel;

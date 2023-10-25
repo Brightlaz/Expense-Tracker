@@ -35,7 +35,7 @@ app.use(passport.session())
 app.use('/v1', routes);
 
 app.use('/*', function (req, res) {
-    res.send('<body onload="window.location = \'/swagger-ui/\'"><a href="/v1/auth/login/">Login to see the API</a>')
+    res.send('<body onload="window.location = \'/swagger-ui/\'"><a href="/v1/docs">Click to visit the API documentation</a>')
 });
 
 // Error Handler Middleware
