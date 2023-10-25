@@ -19,7 +19,7 @@ async function getAllUsers(req, res, next) {
 
         const users = await ProfileModel.find({}, {
             limit: limit,
-            select: ['googleId', 'fullName', 'avatar'],
+            select: ['id', 'googleId', 'fullName', 'avatar'],
             sort: { fullName: 'asc' },
         });
 
@@ -51,10 +51,10 @@ async function getUserByID(req, res, next) {
 
 async function updateUser(req, res, next) {
     try {
-        const userId = req.params.id;
+        const userId = req.user.id;
         const userData = userUpdateSchema.parse(req.body);
 
-        const user = await ProfileModel.findById(userId);
+        const user = await ProfileModel.findOne({ googleId: userId });
 
         if (!user) return next(new ErrorResponse('User not found', httpStatus.NOT_FOUND))
 
@@ -77,11 +77,11 @@ async function updateUser(req, res, next) {
     }
 }
 
-async function deleteUserByID(req, res, next) {
+async function deleteUser(req, res, next) {
     try {
-        const userId = req.params.id;
+        const userId = req.user.id;
 
-        const user = await ProfileModel.findById(userId);
+        const user = await ProfileModel.findOne({ googleId: userId });
 
         if (!user) return next(new ErrorResponse('User not found', httpStatus.NOT_FOUND))
 
@@ -101,5 +101,5 @@ module.exports = {
     getAllUsers,
     getUserByID,
     updateUser,
-    deleteUserByID
+    deleteUser
 }

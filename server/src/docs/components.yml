@@ -1,5 +1,61 @@
 components:
   schemas:
+    UserData:
+      type: object
+      properties:
+        avatar:
+          type: string
+        fullName:
+          type: string
+        googleId:
+          type: string
+        Id:
+          type: string
+      example:
+        avatar: "https://lh3.googleusercontent.com/a/AAcHTtecH_6ZOOWXTALQXiC"
+        fullName: "fake name"
+        googleId: "5ebac534954b54139806c112"
+        Id: "0a582-ec41-46b0-9884-cbf49f8cb7a"
+
+    UserFullData:
+      type: object
+      properties:
+        googleId:
+          type: string
+        fullName:
+          type: string
+        email:
+          type: string
+          format: email
+        avatar:
+          type: string
+        phoneNumber:
+          type: number
+        occupation:
+          type: string
+        salary:
+          type: number
+        saving:
+          type: number
+        goal:
+          type: number
+        id:
+          type: string
+        _type:
+          type: string
+      example:
+        googleId: "1168593408059940726345"
+        fullName: "Obinna Franklin Duru"
+        email: "duruobinnafranklin@gmail.com"
+        avatar: "https://lh3.googleusercontent.com/a/ACg8ocLp-GGTIRtfF8d6I8XrNpBmcZBMsRSEOcUPWQ9HZuqi4Q=s96-c"
+        phoneNumber: 0
+        occupation: "null"
+        salary: 0
+        saving: 0
+        goal: 0
+        id: "3680a582-ec41-46b0-9884-cbf49f8cb7aa"
+        _type: "profile"
+
     Error:
       type: object
       properties:
