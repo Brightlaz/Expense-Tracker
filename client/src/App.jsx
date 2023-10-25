@@ -13,6 +13,7 @@ import { Toaster } from "react-hot-toast";
 // import { ROLES } from './config/roles'
 import useTitle from "./hooks/useTitle";
 import SignUp from "./pages/SignUp";
+import Card from "./pages/Card";
 
 function App() {
   useTitle("Expense Tracker");
@@ -26,6 +27,7 @@ function App() {
           <Route path="signup" element={<SignUp />} />
           <Route path="budget" element={<Budget />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="card" element={<Card />} />
           {/* Protected Routes */}
           {/* <Route element={<PersistLogin />}>
             <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}> */}
