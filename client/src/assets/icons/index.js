@@ -12,6 +12,11 @@ import budgetActive from "./budgetBlue.svg";
 import cardActive from "./cardBlue.svg";
 import profileActive from "./profileBlue.svg";
 import homeActive from "./homeBlue.svg";
+import logout from "./logout.svg";
+import password from "./password.svg";
+import privacy from "./privacy.svg";
+import settings from "./settings.svg";
+import income from "./income.svg";
 
 export {
   Gasoline,
@@ -28,4 +33,9 @@ export {
   cardActive,
   profileActive,
   homeActive,
+  logout,
+  privacy,
+  password,
+  settings,
+  income,
 };

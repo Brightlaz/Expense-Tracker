@@ -7,9 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        primary:'#000044',
-        primarypurple:'#6C63FF'
+      colors: {
+        primary: "#000044",
+        primarypurple: "#6C63FF",
+      },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

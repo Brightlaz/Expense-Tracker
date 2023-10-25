@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
   return (
     <nav
-      className="absolute bottom-0 left-0 flex justify-between w-full pl-5 pr-[17px] pt-[15px] pb-4"
+      className="fixed bg-white bottom-0 z-10 left-0 flex justify-between w-full pl-5 pr-[17px] pt-[15px] pb-4"
       style={{ boxShadow: "0 -4px 6px -1px rgba(0, 0, 0, 0.1)" }}
     >
       {navbar.map((item, index) => (

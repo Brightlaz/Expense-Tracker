@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import DashLayout from "./layouts/DashLayout";
 import Missing from "./pages/Missing";
 import Budget from "./pages/Budget";
+import Profile from "./pages/Profile";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 // import PersistLogin from './auth/PersistLogin'
@@ -24,6 +25,7 @@ function App() {
           <Route index element={<Landing />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="budget" element={<Budget />} />
+          <Route path="profile" element={<Profile />} />
           {/* Protected Routes */}
           {/* <Route element={<PersistLogin />}>
             <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}> */}
