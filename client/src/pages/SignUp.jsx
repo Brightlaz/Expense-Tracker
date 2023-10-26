@@ -20,7 +20,8 @@ const SignUp = () => {
 
       const response = await axios.get(`${BASE_URL}/v1/auth/login`);
       const { data } = response;
-      console.log(data);
+      //console.log(data);
+      alert ("Data",data)
     } catch (error) {
       console.error(error);
       setIsLoading(false);
