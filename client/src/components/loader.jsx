@@ -5,7 +5,7 @@ import 'animate.css';
 
 const Loader = () => {
   return (
-    <div className="flex-grow flex w-full h-full items-center justify-center">
+    <div className="flex-grow flex w-screen min-h-screen items-center justify-center">
       <img
         src={Logo}
         className="animate__animated animate__bounce animate__infinite"
