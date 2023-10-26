@@ -19,7 +19,7 @@ async function googleCallback(req, res, next) {
             await user.save()
 
             res.status(httpStatus.OK).json({
-                sucess: true,
+                success: true,
                 data: {
                     googleId: profile.id,
                     fullName: profile.displayName,
@@ -29,7 +29,7 @@ async function googleCallback(req, res, next) {
             });
         } else {
             res.status(httpStatus.OK).json({
-                sucess: true,
+                success: true,
                 data: {
                     googleId: profile.id,
                     fullName: profile.displayName,
