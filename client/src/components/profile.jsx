@@ -4,8 +4,8 @@ import { profileItems } from "../data/profileItems";
 
 const ProfileComp = () => {
   return (
-    <div className="relative flex-grow px-[22px] pb-[130px]">
-      <div className="w-full mb-[25px] flex flex-col pt-[49px] items-center">
+    <div className="relative flex-grow pt-5 px-[22px] pb-[130px]">
+      <div className="w-full mb-[25px] flex flex-col items-center">
         <h1 className="text-black text-2xl font-semibold leading-[41.17px] mb-[14px]">
           Profile
         </h1>

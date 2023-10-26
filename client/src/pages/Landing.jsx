@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="px-[22px] min-h-screen relative pt-[78px] pb-[70px]">
+    <main className="px-[22px] min-h-screen relative pt-5  pb-[70px]">
       <div className="absolute -bottom-1 left-0">
         <img src={vectorDown} className="w-[483px] h-auto" alt="pattern icon" />
       </div>

@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from "react-router-dom";
 import PrimaryLayout from "./layouts/PrimaryLayout";
-import Missing from "./pages/Missing";
-import Budget from "./pages/Budget";
-import Profile from "./pages/Profile";
-import Card from "./pages/Card";
+const Missing = lazy(()=>import ("./pages/Missing"));
+const Budget = lazy(()=>import ("./pages/Budget"))
+const Profile = lazy(()=>import ("./pages/Profile"));
+const Card = lazy(()=>import ("./pages/Card"));
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 import Loader from './components/loader';
@@ -12,7 +12,7 @@ import Loader from './components/loader';
 // import RequireAuth from './auth/RequireAuth'
 // import { ROLES } from './config/roles'
 import useTitle from "./hooks/useTitle";
-import SignUp from "./pages/SignUp";
+const SignUp = lazy(()=> import ( "./pages/SignUp"));
 import Statistics from './pages/Statistics'
 const Landing = lazy(() => import('./pages/Landing'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));

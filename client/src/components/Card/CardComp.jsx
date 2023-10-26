@@ -6,8 +6,8 @@ import state from "../../store";
 
 export const CardComp = () => {
   return (
-    <div className="px-[22px] flex-grow pb-[130px]">
-      <div className="w-full flex flex-col pt-[49px] items-center">
+    <div className="px-[22px] flex-grow pt-5 pb-[130px]">
+      <div className="w-full flex flex-col items-center">
         <h1 className="text-black text-2xl font-semibold leading-[41.17px]">
           Card
         </h1>
