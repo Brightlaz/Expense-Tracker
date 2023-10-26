@@ -18,10 +18,11 @@ const SignUp = () => {
       if (isLoading) return;
       setIsLoading(true);
 
-      const response = await axios.get(`${BASE_URL}/v1/auth/login`);
+      //const response = 
+        await axios.get(`${BASE_URL}/v1/auth/login`);
       
-      console.log(response);
-      alert (response)
+      //console.log(response);
+      //alert (response)
     } catch (error) {
       console.error(error);
       setIsLoading(false);
