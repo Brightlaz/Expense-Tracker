@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply font-Montserrat;
+  @apply font-Montserrat bg-black/5;
 }
 
 /* Scrollbar Styles */
@@ -14,7 +14,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:#233DFF;
+  background-color: #233dff;
   /* Set the color of the scrollbar thumb */
   border-radius: 4px;
   /* Optional: Round the corners of the thumb */

@@ -28,12 +28,12 @@ function App() {
       <Routes>
         <Route path="/" element={<PrimaryLayout />}>
           <Route index element={<Suspense fallback={<Loader />}><Landing /></Suspense>} />
+          <Route path="signup" element={<Suspense fallback={<Loader />}><SignUp /></Suspense>} />
           {/* Protected Routes */}
           {/* <Route element={<PersistLogin />}>
             <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}> */}
           <Route element={<Suspense fallback={<Loader />}><DashLayout /></Suspense>}>
             <Route path='userdashboard' element={<Suspense fallback={<Loader />}><Dashboard /></Suspense>} />
-            <Route path="signup" element={<Suspense fallback={<Loader />}><SignUp /></Suspense>} />
             <Route path="statistics" element={<Suspense fallback={<Loader />}><Statistics /></Suspense>} />
             <Route path="budget" element={<Suspense fallback={<Loader />}><Budget /></Suspense>} />
             <Route path="profile" element={<Suspense fallback={<Loader />}><Profile /></Suspense>} />

@@ -5,7 +5,7 @@ import state from "../../store";
 
 const Budgets = () => {
   return (
-    <div className="px-[22px] w-full space-y-[19px] mt-[40px]">
+    <div className="px-[22px] w-full space-y-[19px] pt-[40px]">
       <h1 className="text-center text-2xl font-semibold leading-[41.17px] flex justify-center w-full">
         Budget
       </h1>
