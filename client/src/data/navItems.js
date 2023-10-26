@@ -14,7 +14,7 @@ import {
 export const navbar = [
   {
     title: "Home",
-    path: "/",
+    path: "/userdashboard",
     icon: home,
     active: homeActive,
   },

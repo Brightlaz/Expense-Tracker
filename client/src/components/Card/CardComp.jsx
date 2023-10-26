@@ -6,7 +6,7 @@ import state from "../../store";
 
 export const CardComp = () => {
   return (
-    <div className="px-[22px] pb-[130px]">
+    <div className="px-[22px] flex-grow pb-[130px]">
       <div className="w-full flex flex-col pt-[49px] items-center">
         <h1 className="text-black text-2xl font-semibold leading-[41.17px]">
           Card
