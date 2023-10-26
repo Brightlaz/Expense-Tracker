@@ -18,9 +18,9 @@ async function googleCallback(req, res, next) {
 
             await user.save()
 
-            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/');
+            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/userdashboard');
         } else {
-            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/');
+            res.status(httpStatus.MOVED_PERMANENTLY).redirect('https://expense-tracker-jet-zeta-86.vercel.app/userdashboard');
         }
     } catch (error) {
         next(new ErrorResponse(error.message, httpStatus.INTERNAL_SERVER_ERROR));
