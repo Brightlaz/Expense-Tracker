@@ -1,1 +1,1 @@
-export const BASE_URL='https://expentra.onrender.com/'
+export const BASE_URL='https://expentra.onrender.com'

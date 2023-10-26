@@ -18,12 +18,13 @@ const SignUp = () => {
       if (isLoading) return;
       setIsLoading(true);
 
-      const response = await axios.get(`${BASE_URL}v1/auth/login`);
+      const response = await axios.get(
+        `https://expentra.onrender.com/v1/auth/login`
+      );
       const { data } = response;
-      console.log(data);
 
-      //console.log(response);
-      //alert (response)
+      window.location.href = response.data.data;
+      // console.log(data);
     } catch (error) {
       console.error(error);
       setIsLoading(false);
@@ -36,9 +37,11 @@ const SignUp = () => {
   const GoogleCallback = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get(`${BASE_URL}/v1/auth/google/callback/`);
-
-      console.log(response);
+      const response = await axios.get(
+        `https://expentra.onrender.com/v1/auth/google/callback/`
+      );
+      const { data } = response;
+      console.log(data);
 
       toast.success("SignUp Successful");
     } catch (error) {

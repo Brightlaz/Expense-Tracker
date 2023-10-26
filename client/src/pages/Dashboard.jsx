@@ -28,7 +28,7 @@ const Dashboard = () => {
           </div>
           {/* Name and Welcoming */}
           <div className="mr-auto ml-2 leading-none">
-            <h2 className="font-bold">Hello John</h2>
+            <h2 className="font-bold">Hello Bright</h2>
             <p>Welcome Back</p>
           </div>
           {/* Bell */}
