@@ -18,6 +18,29 @@ import TotalBalance from "../components/TotalBalance";
 const Dashboard = () => {
   // const { username, status, verified, isLoggedIn } = useAuth()
 
+  const GoogleCallback = async () => {
+    try {
+      setIsLoading(true);
+      const response = await axios.get(
+        `https://expentra.onrender.com/v1/auth/google/callback/`
+      );
+      const { data } = response;
+      console.log(data);
+
+      toast.success("SignUp Successful");
+    } catch (error) {
+      console.error(error);
+      setIsLoading(false);
+      toast.error("Error in the named callback URL");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // useEffect(()=>{
+  //   GoogleCallback()
+  // },[])
+
   return (
     <div className="flex-grow">
       {/*User Info Tab */}

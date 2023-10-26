@@ -29,29 +29,13 @@ const SignUp = () => {
       console.error(error);
       setIsLoading(false);
       toast.error("Error Signing Up");
-    } finally {
+    } 
+    finally {
       setIsLoading(false);
     }
   };
 
-  const GoogleCallback = async () => {
-    try {
-      setIsLoading(true);
-      const response = await axios.get(
-        `https://expentra.onrender.com/v1/auth/google/callback/`
-      );
-      const { data } = response;
-      console.log(data);
 
-      toast.success("SignUp Successful");
-    } catch (error) {
-      console.error(error);
-      setIsLoading(false);
-      toast.error("Error in the named callback URL");
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   return (
     <div className="flex flex-col items-center justify-center">
