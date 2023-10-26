@@ -6,7 +6,13 @@ const isAuthenticated = require('../../middlewares/auth.middleware');
 
 const router = express.Router();
 
-router.get('/login', passport.authenticate('google', { scope: ['profile', 'email'] }));
+router.get('/login', (req, res) => {
+    res.status(200).json({
+        success: true,
+        data: `${req.protocol}://${req.get('host')}/v1/auth/google`
+    })
+});
+router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 router.get(
     '/google/callback',
     passport.authenticate('google', { failureRedirect: '/v1/auth/login', failureMessage: true }),
