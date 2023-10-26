@@ -18,9 +18,10 @@ const SignUp = () => {
       if (isLoading) return;
       setIsLoading(true);
 
-      //const response = 
-        await axios.get(`${BASE_URL}/v1/auth/login`);
-      
+      const response = await axios.get(`${BASE_URL}v1/auth/login`);
+      const { data } = response;
+      console.log(data);
+
       //console.log(response);
       //alert (response)
     } catch (error) {
@@ -36,7 +37,7 @@ const SignUp = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(`${BASE_URL}/v1/auth/google/callback/`);
-      
+
       console.log(response);
 
       toast.success("SignUp Successful");
